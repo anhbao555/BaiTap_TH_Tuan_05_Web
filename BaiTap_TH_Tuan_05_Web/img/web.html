@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     #menu {
         display: flex;
@@ -86,6 +87,72 @@
         margin-right: 60px;
         margin-bottom: 20px;
     }
+
+    .right-des fieldset {
+        width: 330px;
+        height: 385px;
+        border-radius: 7px;
+        padding: 0 21px;
+        border: 1px solid rgb(181, 184, 184);
+    }
+    .right-des h2 {
+        color: rgb(4, 177, 208);
+        font-size: 40px;
+        margin: 20px 15px 20px 0;
+        text-align: right;
+    }
+
+    .allreviews {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-content: space-between;
+    }
+    .content_people_title {
+        display: flex;
+    }
+    .people_name {
+        margin: 0 10px;
+    }
+    .content_people_title .people_name p {
+        margin: 0;
+        padding-bottom: 5px;
+    }
+    .right_span {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 15px 10px;
+    }
+    .right_span_total {
+        color: rgb(181, 184, 184);
+    }
+    .right_opt {
+        width: 300px;
+        height: 35px;
+        margin: 5px 0 5px 15px;
+        border-radius: 5px;
+        padding-left: 8px;
+        padding-right: 10px;
+    }
+    .right_input {
+        width: 300px;
+        height: 45px;
+        margin: 5px 0 5px 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(4, 183, 183);
+        color: #fff;
+        font-size: 18px;
+    }
+    .rigth_input_img {
+        position: relative;
+    }
+    .rigth_input_img input {
+        background-color: #fff;
+        border: 2px solid rgb(4, 183, 183);
+        color: rgb(4, 183, 183);
+    }
+
 </style>
 
 <body>
@@ -109,8 +176,10 @@
             </h4>
         </div>
         <div class="right">
-            <i class='fas fa-angle-right'></i>
-            <input type="text" placeholder="Search..">
+            <i class="fa fa-search">
+                <input type="text" placeholder="Search...">
+            </i>
+            
             <img style="vertical-align: middle;" src="Bell 1.png" alt="">
             <img style="vertical-align: middle;" src="Shopping cart simple 1.png" alt="">
             <img style="vertical-align: middle;" src="Avatar 758.png" alt="">
@@ -148,9 +217,12 @@
         <div class="ProductDescription">
             <div class="left-des">
                 <h1>Product Description</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis harum, nemo dicta exercitationem perspiciatis temporibus accusantium quasi consequuntur recusandae, sapiente voluptates sint voluptate ducimus accusamus commodi explicabo
-                    veniam, quia tenetur!
-                </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem ipsa deserunt? Sed enim explicabo expedita molestias numquam, distinctio iure voluptas incidunt quidem tempora autem earum, dolorem esse natus provident?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam dolore voluptates provident, perspiciatis consectetur voluptatum, eligendi molestias maiores nam laborum harum atque quo minus corporis aliquam dicta, itaque suscipit excepturi.
+                    </p>
                 <div class="contact">
                     <div><img style="vertical-align: middle;" src="Truck 1.png" alt=""> Free delivery</div>
                     <div><img style="vertical-align: middle;" src="Arrow bend up left 1.png" alt=""> 7 days return</div>
@@ -167,9 +239,38 @@
                 </div>
             </div>
             <div class="right-des">
-                <div class="price">
-                    <h1>$99</h1>
-                </div>
+                <fieldset>
+                    <h2>$99</h2>
+                    <form action="">
+                        <select name="" id="" class="right_opt">
+                            <option value="">Color</option>
+                        </select> 
+                    </form>
+                    <form action="">
+                        <select name="" id="" class="right_opt">
+                            <option value="">Size</option>
+                        </select>
+                    </form>
+                    <form action="">
+                        <select name="" id="" class="right_opt">
+                            <option value="">3</option>
+                        </select>
+                    </form>
+                    <div class="right_span">
+                        <div class="right_span_total">
+                            <span>Total</span>
+                        </div>
+                        <div>
+                            <span><b>$265</b></span>
+                        </div>
+                        
+                    </div>
+                    <input class="right_input" type="submit" name="" id="" value="Buy now">
+                    <div class="rigth_input_img">
+                        <input class="right_input" type="submit" name="" id="" value="Add to cart">
+                        <img src="anh/icons8-shopping-cart-32.png" alt="">
+                    </div>
+                </fieldset>
             </div>
 
         </div>
@@ -184,9 +285,69 @@
                 <div>
                     <h5>
                         Show all reviews
-
+                        <i class="fa fa-angle-right"></i>
                     </h5>
-                    <i class="fas fa-angle-right"></i>
+                    
+                </div>
+            </div>
+            <div class="allreviews">
+                <div class="content_people">
+                    <div class="content_people_title">
+                        <img src="Avatar 753.png" alt="">
+                        <div class="people_name">
+                            <p>Jay Rutherford</p>
+                            <img src="Rating 300.png" alt="">
+                        </div>
+                        <span style="color: rgb(181, 184, 184);">3d ago</span>
+                    </div>
+                    <div class="content_people_comment">
+                        <p>Nulla laboris fugiat fugiat minim minim excepteur eiusmod quis. 
+                            Laborum est minim id cillum nostrud cillum consectetur</p>
+                    </div>
+                </div>
+                <div class="content_people">
+                    <div class="content_people_title">
+                        <img src="Avatar 756.png" alt="">
+                        <div class="people_name">
+                            <p>Nicole Chung</p>
+                            <img src="Rating 305.png" alt="">
+                        </div>
+                        <span style="color: rgb(181, 184, 184);">3d ago</span>
+                    </div>
+                    <div class="content_people_comment">
+                        <p>Proident ullamco minim quis aliquip eiusmod in deserunt sit aliqua. 
+                            adipisicing reprehenderit elit officia occaecat dolor.</p>
+                    </div>
+
+                </div>
+                <div class="content_people">
+                    <div class="content_people_title">
+                        <img src="Avatar 755.png" alt="">
+                        <div class="people_name">
+                            <p>Wei Arnold</p>
+                            <img src="Rating 317.png" alt="">
+                        </div>
+                        <span style="color: rgb(181, 184, 184);">3d ago</span>
+                    </div>
+                    <div class="content_people_comment">
+                        <p>Ut commodo quis sit in consequat sit nisi dolor adipisicing officia tempor 
+                            do duis consequat dolore dolore ipsum.</p>
+                    </div>
+
+                </div>
+                <div class="content_people">
+                    <div class="content_people_title">
+                        <img src="Avatar 757.png" alt="">
+                        <div class="people_name">
+                            <p>Judith Mejia</p>
+                            <img src="Rating 299.png" alt="">
+                        </div>
+                        <span style="color: rgb(181, 184, 184);">3d ago</span>
+                    </div>
+                    <div class="content_people_comment">
+                        <p>Ad laborum dolor cupidatat culpa mollit non non sunt qui. 
+                            In ut et aute mollit eiusmod occaecat eiusmod mi.</p>
+                    </div>
                 </div>
             </div>
         </div>
